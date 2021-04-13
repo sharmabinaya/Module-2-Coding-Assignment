@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+} 
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+h1{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-style: bold;
+}
+
+ul{
+    position: relative;
+    list-style: none;
+    float: right;
+    padding-inline-start: 0px;
+    
+}
+
+section{
+    position: relative;
+    background-color: rgb(153,153,153);
+    padding: 3% 1%;
+}
+
+.meet{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 1px 20px 1px 20px;
+    border: 1px solid black;
+}
+
+#Chicken{
+    background-color: rgb(213,152,152);
+}
+
+#Beef{
+    background-color: rgb(193,69,67);
+}
+
+#Sushi{
+    background-color: rgb(229,209,152);
+}
+
+/* For Desktop */
+@media (min-width: 992px){
+    .col-lg-4{
+        float: left;
+        border: 1px solid black;
+        margin-right: 2%;
+    }
+    ul{
+        margin-left: 2%;
+    }
+    section{
+        padding: 1%;
+    }
+    .col-lg-4{
+        width: 31%;
+    }
+}
+
+/* For Tab */
+@media (min-width: 768px) and (max-width: 991px){
+    .col-md-6{
+        float: left;
+        border: 1px solid black;
+        margin: 2% 2.5% 1% 0%;
+    }
+    .col-md-6{
+        width: 48.6%;
+    }
+    ul{
+        margin: 0% 4%;
+    }
+    section{
+        padding: 1.5%;
+    }
+    #mid{
+        margin: 2% 0% 1% 0%;
+    }
+    #last{
+        width: 100%;
+    }
+}
+
+/* For Mobile */
+@media (max-width: 767px){
+    .col-ld-12{
+        float: left;
+        border: 1px solid black;
+        margin: 2.5% 0%; 
+    }
+    ul{
+        margin: 0% 10%;
+    }
+    .col-ld-12{
+        width: 100%;
+    }
+}
